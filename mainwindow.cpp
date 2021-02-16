@@ -137,6 +137,7 @@ void MainWindow::saveLrc(){
 
     QFile toSaveLrc(savePath, this);
     QTextStream lrcStream(&toSaveLrc);
+    lrcStream.setCodec("utf-8");
     if(!toSaveLrc.open(QFileDevice::WriteOnly | QFileDevice::Truncate)){
         QMessageBox::warning(this, "打开写入文件", "打开要写入的文件失败，请检查文件名和是否具有写入权限！");
         return;
