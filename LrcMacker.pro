@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    mytextedit.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    mytextedit.h
 
 FORMS += \
     mainwindow.ui
